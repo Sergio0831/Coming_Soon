@@ -5,7 +5,7 @@ function toggle() {
   newsletter.classList.toggle("active");
 }
 
-const countDate = new Date("Jan 1, 2021 00:00:00").getTime();
+const countDate = new Date("August 31, 2020 00:00:00").getTime();
 console.log(countDate);
 
 function newYear() {

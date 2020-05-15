@@ -170,6 +170,10 @@ section .sci li a {
   -o-transform: scale(0.8);
 }
 
+a:hover {
+  color: #ff0083;
+}
+
 .newsletter {
   position: fixed;
   top: 50%;
@@ -218,6 +222,11 @@ section .sci li a {
   width: 300px;
   font-size: 18px;
   border: 1px solid #999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .newsletter .inputBox input[type="submit"] {
