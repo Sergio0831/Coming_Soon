@@ -1,33 +1,33 @@
 // Modal Window Newsletter
 
 function toggle() {
-  var newsletter = document.querySelector(".newsletter");
-  newsletter.classList.toggle("active");
+	var newsletter = document.querySelector('.newsletter');
+	newsletter.classList.toggle('active');
 }
 
-const countDate = new Date("August 31, 2020 00:00:00").getTime();
+const countDate = new Date('May 22, 2021 00:00:00').getTime();
 console.log(countDate);
 
 function newYear() {
-  const now = new Date().getTime();
-  gap = countDate - now;
+	const now = new Date().getTime();
+	gap = countDate - now;
 
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
+	const second = 1000;
+	const minute = second * 60;
+	const hour = minute * 60;
+	const day = hour * 24;
 
-  const d = Math.floor(gap / day);
-  const h = Math.floor((gap % day) / hour);
-  const m = Math.floor((gap % hour) / minute);
-  const s = Math.floor((gap % minute) / second);
+	const d = Math.floor(gap / day);
+	const h = Math.floor((gap % day) / hour);
+	const m = Math.floor((gap % hour) / minute);
+	const s = Math.floor((gap % minute) / second);
 
-  document.getElementById("day").innerText = d;
-  document.getElementById("hour").innerText = h;
-  document.getElementById("minute").innerText = m;
-  document.getElementById("second").innerText = s;
+	document.getElementById('day').innerText = d;
+	document.getElementById('hour').innerText = h;
+	document.getElementById('minute').innerText = m;
+	document.getElementById('second').innerText = s;
 }
 
 setInterval(function () {
-  newYear();
+	newYear();
 }, 1000);
